@@ -1,4 +1,5 @@
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:drawer_test_app1/components/homegrid1.dart';
 import 'package:drawer_test_app1/components/titles1.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: <Widget> [
         Container(
           margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
@@ -37,7 +38,8 @@ class HomePage extends StatelessWidget {
         ItemTitles1(titlename: 'Daily Essentials'),
         const CircleListCategory(),
         // HomeGrid1(),
-        TitleImages1(imgaddress: 'assets/images/titleimage1.jpg'),
+        TitleImages1(imgaddress: 'assets/images/banner1.png'),
+        const HomeGrid1(),
       ],
     );
   }
@@ -144,8 +146,8 @@ class CircleListCategoryItem extends StatelessWidget {
           height: 90,
           child: ListTile(
             title: Image.asset(
+              alignment: Alignment.topCenter,
               imagelocation,
-              fit: BoxFit.cover,
             ),
             subtitle: Container(
               alignment: Alignment.topCenter,

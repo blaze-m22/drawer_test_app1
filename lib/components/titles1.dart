@@ -197,6 +197,8 @@ class Grid1Items extends StatelessWidget {
 }
 */
 
+
+
 class TitleImages1 extends StatelessWidget {
   final String imgaddress;
 
@@ -208,13 +210,15 @@ class TitleImages1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-      color: Colors.black12,
       width: double.infinity,
       height: 150,
-      child: Image.asset(
-        imgaddress,
-        fit: BoxFit.cover,
-        alignment: Alignment.center,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: Image.asset(
+          imgaddress,
+          fit: BoxFit.cover,
+          alignment: Alignment.topCenter,
+        ),
       ),
     );
   }
