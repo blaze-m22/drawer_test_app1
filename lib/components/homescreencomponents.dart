@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../screens/homepage.dart';
+import '../screens/myaccount.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -24,7 +25,13 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: const Color(0xF1e6efe5),
       appBar: AppBar(
         elevation: 0,
-        title: const Text('Appbar'),
+        centerTitle: true,
+        backgroundColor: Color(0xFF009743),
+        title: Image.asset(
+          'assets/images/logo2.png',
+          height: 110,
+        ),
+        toolbarHeight: 70,
         // shape: const RoundedRectangleBorder(
         //   borderRadius: BorderRadius.vertical(
         //     bottom: Radius.circular(30),
@@ -32,9 +39,10 @@ class _HomeScreenState extends State<HomeScreen> {
         // ),
         actions: <Widget>[
           IconButton(
-              icon: const Icon(
-                Icons.search_rounded,
-              ), onPressed: () {  },
+            icon: const Icon(
+              Icons.search_rounded,
+            ),
+            onPressed: () {},
           ),
         ],
       ),
@@ -61,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),

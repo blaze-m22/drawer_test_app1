@@ -37,9 +37,8 @@ class HomePage extends StatelessWidget {
         ),
         ItemTitles1(titlename: 'Daily Essentials'),
         const CircleListCategory(),
-        // HomeGrid1(),
         TitleImages1(imgaddress: 'assets/images/banner1.png'),
-        const HomeGrid1(),
+        //const HomeGrid1(),
       ],
     );
   }
@@ -55,14 +54,7 @@ class MyCart extends StatelessWidget {
 }
 
 
-class MyAccount extends StatelessWidget {
-  const MyAccount({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
 
 
 
