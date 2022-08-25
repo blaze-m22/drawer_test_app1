@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/homepage.dart';
 import '../screens/myaccount.dart';
+import '../screens/shoppingcart.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        backgroundColor: Color(0xFF009743),
+        backgroundColor: const Color(0xFF009743),
         title: Image.asset(
           'assets/images/logo2.png',
           height: 110,

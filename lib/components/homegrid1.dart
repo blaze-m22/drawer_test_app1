@@ -13,7 +13,7 @@ class _HomeGrid1State extends State<HomeGrid1> {
     return Container(
       height: 446,
       padding: const EdgeInsets.all(2),
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
       color: const Color(0x420f7a2b),
       child:
           GridView.count(
